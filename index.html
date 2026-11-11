@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Does AI Do? | TechED</title>
+  <meta name="description" content="A simple, friendly explanation of what artificial intelligence is and what it does.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <span class="logo">Tech<span>ED</span></span>
+      <ul>
+        <li><a href="#what">What is AI</a></li>
+        <li><a href="#how">How it learns</a></li>
+        <li><a href="#does">What it does</a></li>
+        <li><a href="#limits">Limits</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>What does <span class="accent">AI</span> actually do?</h1>
+      <p>Artificial intelligence is software that learns patterns from examples and uses them to make predictions, decisions, and new content. Here's a plain-language tour.</p>
+      <a class="btn" href="#what">Start learning</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="what" class="section">
+      <h2>What is AI?</h2>
+      <p>
+        <strong>Artificial intelligence (AI)</strong> is a branch of computer science focused on building
+        systems that can do tasks that normally need human intelligence: understanding language,
+        recognizing images, solving problems, and making decisions.
+      </p>
+      <p>
+        Traditional programs follow rules a person writes step by step. Most modern AI is different:
+        instead of being told the rules, it <em>learns</em> them by studying large amounts of examples.
+        This approach is called <strong>machine learning</strong>.
+      </p>
+    </section>
+
+    <section id="how" class="section alt">
+      <h2>How does AI learn?</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <h3>Collect data</h3>
+          <p>Gather lots of examples, like thousands of photos labeled "cat" or "dog", or millions of sentences of text.</p>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <h3>Train a model</h3>
+          <p>The computer adjusts millions of internal settings until its guesses match the examples as closely as possible.</p>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <h3>Make predictions</h3>
+          <p>The trained model handles new inputs it has never seen, such as a new photo or a new question.</p>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <h3>Improve</h3>
+          <p>People check the results, fix mistakes, and retrain with better data so the model keeps getting better.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="does" class="section">
+      <h2>What can AI do?</h2>
+      <p class="hint">Click a card to see real-world examples.</p>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section id="limits" class="section alt">
+      <h2>What AI can't do (yet)</h2>
+      <ul class="limits">
+        <li><strong>It doesn't truly understand.</strong> AI finds patterns; it doesn't have feelings, beliefs, or common sense the way people do.</li>
+        <li><strong>It can be wrong with confidence.</strong> AI can produce answers that sound right but are false, so important results should be checked.</li>
+        <li><strong>It learns our biases.</strong> If the training data is unfair or incomplete, the AI's decisions can be too.</li>
+        <li><strong>It depends on people.</strong> Humans choose the data, set the goals, and are responsible for how AI is used.</li>
+      </ul>
+    </section>
+
+    <section id="quiz" class="section">
+      <h2>Quick check</h2>
+      <p>Test what you learned.</p>
+      <form id="quiz-form" class="quiz"></form>
+      <div class="quiz-actions">
+        <button type="button" class="btn" id="check-btn">Check answers</button>
+        <button type="button" class="btn ghost" id="reset-btn">Try again</button>
+      </div>
+      <p id="quiz-result" class="quiz-result" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>TechED &middot; Learning technology, one idea at a time.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
